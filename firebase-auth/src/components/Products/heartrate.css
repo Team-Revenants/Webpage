@@ -1,0 +1,20 @@
+.heartrate
+{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.dil
+{
+    padding-right: 200px;
+    height: 700px;
+}
+.heartkagyan
+{
+    padding-left: 200px;
+}
+.heartkagyan1
+{
+    padding-top:  250px;
+}

@@ -1,0 +1,18 @@
+.part
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.img-2
+{
+    width: 850px;
+    height: 800px;
+    padding-left: 70px;
+}
+.calories1
+{
+    padding-right: 200px;
+    padding-top: 290px;
+}

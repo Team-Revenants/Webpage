@@ -1,0 +1,32 @@
+.main
+{
+    display: flex;
+    flex-direction: column;
+    height: 753px;
+    background-image: white;
+}
+.title
+{
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none ;
+}
+.top
+{
+    text-align: center;
+    height: 500px;
+    width: 100%;
+}
+.bottom
+{
+    width: 100%;
+    height: 250px;
+
+}
+.img
+{
+    height: 100%;
+    width: 100%;
+}

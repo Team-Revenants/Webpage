@@ -1,0 +1,82 @@
+.container {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1526676537331-7747bf8278fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerBox {
+  min-width: 480px;
+  height: fit-content;
+  width: fit-content;
+  opacity: 1;
+  box-shadow: 1px 1px 4px rgba(20, 16, 16, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  border: solid .1px ;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer .error {
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: black;
+  text-align: center;
+}
+
+.footer button {
+  outline: none;
+  border: none;
+  background: #AA4A44;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 16px;
+  width: 100%;
+  transition: 100ms;
+  cursor: pointer;
+}
+
+.footer button:disabled {
+  background-color: gray !important;
+}
+
+.footer button:hover {
+  background-color: #aa2aff;
+}
+
+.footer p {
+  font-weight: 700;
+  color: #000;
+}
+
+.footer p span a {
+  font-weight: bold;
+  color:   rgb(29, 60, 112);
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.heading
+{
+  color: black;
+}
+label
+{
+  color: white;
+}

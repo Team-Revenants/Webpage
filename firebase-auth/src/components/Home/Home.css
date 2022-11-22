@@ -1,0 +1,267 @@
+.header
+{
+   height: 75px ; 
+   background-color:white;
+   border: 5px ;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.name{
+    color : white; 
+    margin-left: 650px;
+}
+.mainm{
+        text-align : center;
+        background-color: white;
+}
+.maincard
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 2000px;
+}
+.card{
+    background-color:white;
+    text-align: center;
+    align-content: center;
+    width: 1080px;
+    /* background-image: url("https://images.pexels.com/photos/258045/pexels-photo-258045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+}
+.card-1{
+    background-color:white;
+    text-align: center;
+    align-content: center;
+    width: 1080px;
+    height: 600px;
+    /* background-image: url("https://images.pexels.com/photos/2270328/pexels-photo-2270328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+}
+.card-2{
+    background-color:white;
+    text-align: center;
+    align-content: center;
+    width: 1080px;
+    height: 600px;
+    /* background-image: url("https://images.pexels.com/photos/4472/nature-hills-sport-bike.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+}
+a{
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 50px;
+}
+.logout{
+    background-color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 39px;
+    width: fit-content;
+}
+.ALL
+{
+    background-color: white;
+    height: 678px;
+}
+.img-1
+{
+    width: 1518px;
+    height: 700px;
+}
+.bet
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.categories{
+    width: 370px;
+    height: 167px;
+    background-color: rgb(216, 221, 225);
+    text-align: center;
+    padding: 25px;
+    background-color: #f2f2ef;
+}
+.icon
+{
+    width: 60px;
+    height: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.part
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.img-2
+{
+    width: 850px;
+    height: 800px;
+    padding-left: 70px;
+}
+.wholebody
+{
+    height: fit-content;
+    background-color:#FEFEFA;
+}
+.pehlagap
+{
+    height: 120px;
+}
+.partanother
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.a1{
+    width: 1518px;
+    height: 700px;
+    background-image: url("https://images.pexels.com/photos/258045/pexels-photo-258045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.teamname
+{   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: transparent;
+
+}
+.record
+{
+    padding-top: 320px;
+    background: transparent;
+    padding-left: 100px;
+}
+.record1
+{
+    font-size: 80px;
+    color: white;
+}
+.revenants
+{
+    padding-left: 115px;
+    padding-top: 60px;
+    font-size: xx-large;
+    color: white ;
+    font-family: 'MaisonNeue', 'Helvetica', Arial, sans-serif;
+    font-weight: 1000;
+}
+.logout
+{
+    background: transparent;
+    padding-right: 40px;
+    padding-top: 50px;
+    color: darkblue;
+}
+.a2{
+    width: 1518px;
+    height: 700px;
+    background-image: url("https://images.unsplash.com/photo-1534787238916-9ba6764efd4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.recordc
+{
+    padding-top: 200px;
+    background: transparent;
+    padding-left: 100px;
+}
+.heartrate
+{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.dil
+{
+    padding-right: 200px;
+    height: 700px;
+}
+.heartkagyan
+{
+    padding-left: 200px;
+}
+.heartkagyan1
+{
+    padding-top:  250px;
+}
+.calories1
+{
+    padding-right: 200px;
+    padding-top: 290px;
+}
+.distancekagyan
+{
+    padding-right: 200px;
+    padding-top: 290px;   
+}
+
+.mail{
+    width: 100%;
+    margin-top: 50px;
+    background-color: #23559c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+  }
+  
+  .mailInputContainer>input{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .mailInputContainer>button{
+    height: 50px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #one:hover
+  {
+    transform: scale(1.1);
+    border: solid .1px ;
+    border-radius: 15px;
+  }
+  #two:hover
+  {
+    transform: scale(1.1);
+    border: solid .1px ;
+    border-radius: 15px;
+  }
+  #three:hover
+  {
+    transform: scale(1.1);
+    border: solid .1px ;
+    border-radius: 15px;
+  }
+  #four:hover
+  {
+    transform: scale(1.1);
+    border: solid .1px ;
+    border-radius: 15px;
+  }
