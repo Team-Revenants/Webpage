@@ -5,14 +5,34 @@ import Calories from "../Products/Calories";
 import Distance from "../Products/Distance";
 import Heartrate from "../Products/Heartrate";
 import "./Home.css"
-import {getdata} from "../Data/Data.js"
+import {useRef} from "react"
+import { getAuth, signOut } from "firebase/auth";
 
 function Home(props) {
-  const logout = ()=>{
+  const Logout = ()=>{
 
+    const auth = getAuth();
+    
+    signOut(auth).then(() => {
+      // Sign-out successful.
+    }).catch((error) => {
+      // An error happened.
+    });
   }
+
   const location = useLocation();
-  console.log(location.state.isLogin);
+  const calories = useRef(null);
+  const heartrate = useRef(null);
+  const distance = useRef(null);
+  const handleClick = ()=>{
+    calories.current?.scrollIntoView({behavior:"smooth"});
+  };
+  const handleClick1 = ()=>{
+    heartrate.current?.scrollIntoView({behavior:"smooth"});
+  };
+  const handleClick2 = ()=>{
+    distance.current?.scrollIntoView({behavior:"smooth"});
+  };
   return (
     // <div>
     //   <div>
@@ -50,13 +70,19 @@ function Home(props) {
     <div>
       <div className="a1"><div className="teamname">
         <div className="teamname1" ><h2 className="revenants">REVENANTS</h2></div>
-        <div className="teamname1" ><Link  style={{textDecoration: 'none'}} to="/login"><h2 className="logout">{props.name ? `Welcome - ${props.name}` : "Log-in"}</h2></Link></div>
+        <div className="teamname1" ><Link  style={{textDecoration: 'none'}} to={props.name ? '/' : '/login'}><h2 onClick={Logout} className="logout">{props.name ? `Welcome - ${props.name}` : "Log-in"}</h2></Link></div>
         </div><div className="textmain"><div className="record"><h1 className="record1">Record.Sweat.</h1><h1 className="record1"> Share.Kudos.</h1></div></div></div>
       {/* <img className="img-1" src="https://images.pexels.com/photos/258045/pexels-photo-258045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /> */}
       <div className="bet">
-        <div className="categories" id="one" ><img className="icon" src="https://img.icons8.com/ios/512/caloric-energy--v2.png" alt="" /><h1>calorie</h1></div>
-        <div className="categories" id="two"><img className="icon" src="https://img.icons8.com/dotty/512/heart-with-pulse.png" alt="" /><h1>HeartRate count</h1></div>
-        <div className="categories" id="three"><img className="icon" src="https://img.icons8.com/ios/512/cycling-road.png" alt="" /><h1>Distance</h1></div>
+        <div 
+        onClick={handleClick} 
+        className="categories" id="one" ><img className="icon" src="https://img.icons8.com/ios/512/caloric-energy--v2.png" alt="" /><h1>Calorie</h1></div>
+        <div
+        onClick={handleClick1} 
+        className="categories" id="two"><img className="icon" src="https://img.icons8.com/dotty/512/heart-with-pulse.png" alt="" /><h1>HeartRate count</h1></div>
+        <div
+        onClick={handleClick2} 
+        className="categories" id="three"><img className="icon" src="https://img.icons8.com/ios/512/cycling-road.png" alt="" /><h1>Distance</h1></div>
         <div className="categories" id="four"><img className="icon" src="https://img.icons8.com/ios/512/conference-call.png" alt="" /><h1><a href="http://localhost:3005/">CommunityPage</a></h1></div>
       </div>
       <div className="a2"><div className="recordc"><h1 className="record1">Track and analyze</h1><h1 className="record1">every aspect of</h1><h1 className="record1">your activity</h1></div></div>
@@ -74,7 +100,7 @@ function Home(props) {
             history.</p></h4>
             </div>
             </div> */}
-            <Calories />
+            <div id="calories" ref ={calories}><Calories /></div>
             <div className="pehlagap"></div>
             {/* <div className="heartrate">
         <div>
@@ -89,7 +115,7 @@ function Home(props) {
             <div className="heartkagyan2"></div>
             </div>
             </div> */}
-            <Heartrate />
+            <div id="heartrate" ref ={heartrate}><Heartrate name = {props.name} /></div>
       <div className="pehlagap"></div> 
       {/* <div className="partanother">
         <div>
@@ -103,7 +129,7 @@ function Home(props) {
             covered and <br /> can analyse your performance.</p></h4></div>
             </div>
             </div> */}
-            <Distance />
+            <div id="distance" ref ={distance}><Distance /></div>
       {/* </div> */}
     {/* </div> */}
     </div>
