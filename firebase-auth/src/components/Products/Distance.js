@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Distance() {
+function Distance(props) {
   return (
     <div className="partanother">
     <div>

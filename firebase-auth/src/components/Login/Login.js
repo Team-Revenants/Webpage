@@ -37,6 +37,8 @@ function Login() {
       .catch((err) => {
         setSubmitButtonDisabled(false);
         setErrorMsg(err.message);
+        alert("wrong credential's");
+        navigate("/Login");
       });
   };
   return (
@@ -54,6 +56,7 @@ function Login() {
         />
         <InputControl 
           label="Password"
+          type = "Password"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, pass: event.target.value }))
           }

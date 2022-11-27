@@ -78,6 +78,7 @@ function Signup() {
         />
         <InputControl
           label="Password"
+          type = "Password"
           placeholder="Enter password"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, pass: event.target.value }))

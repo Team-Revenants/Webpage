@@ -69,7 +69,7 @@ function Home(props) {
     {/*  */}
     <div>
       <div className="a1"><div className="teamname">
-        <div className="teamname1" ><h2 className="revenants">REVENANTS</h2></div>
+        <div className="teamname1" ><h2 className="revenants">CYCLOFIT</h2></div>
         <div className="teamname1" ><Link  style={{textDecoration: 'none'}} to={props.name ? '/' : '/login'}><h2 onClick={Logout} className="logout">{props.name ? `Welcome - ${props.name}` : "Log-in"}</h2></Link></div>
         </div><div className="textmain"><div className="record"><h1 className="record1">Record.Sweat.</h1><h1 className="record1"> Share.Kudos.</h1></div></div></div>
       {/* <img className="img-1" src="https://images.pexels.com/photos/258045/pexels-photo-258045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /> */}
@@ -100,7 +100,7 @@ function Home(props) {
             history.</p></h4>
             </div>
             </div> */}
-            <div id="calories" ref ={calories}><Calories /></div>
+            <div id="calories" ref ={calories}><Calories name={props.name}/></div>
             <div className="pehlagap"></div>
             {/* <div className="heartrate">
         <div>
@@ -129,7 +129,7 @@ function Home(props) {
             covered and <br /> can analyse your performance.</p></h4></div>
             </div>
             </div> */}
-            <div id="distance" ref ={distance}><Distance /></div>
+            <div id="distance" ref ={distance}><Distance name = {props.name}/></div>
       {/* </div> */}
     {/* </div> */}
     </div>
